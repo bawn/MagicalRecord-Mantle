@@ -65,9 +65,6 @@
 		A49BC7E8194EE56A00276B14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A49BC7EA194EE56A00276B14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A49BC7F1194EE56A00276B14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A49BC7F9194EE56A00276B14 /* TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTests-Info.plist"; sourceTree = "<group>"; };
-		A49BC7FB194EE56A00276B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A49BC7FD194EE56A00276B14 /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
 		DC1712F0DAC7050BFCCDAA22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				A49BC7D8194EE56A00276B14 /* Test */,
-				A49BC7F7194EE56A00276B14 /* TestTests */,
 				A40B8FD219930AE0007EAC19 /* TestTests */,
 				A49BC7D1194EE56A00276B14 /* Frameworks */,
 				A49BC7D0194EE56A00276B14 /* Products */,
@@ -184,24 +180,6 @@
 				A49BC7DB194EE56A00276B14 /* InfoPlist.strings */,
 				A49BC7DE194EE56A00276B14 /* main.m */,
 				A49BC7E0194EE56A00276B14 /* Test-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A49BC7F7194EE56A00276B14 /* TestTests */ = {
-			isa = PBXGroup;
-			children = (
-				A49BC7FD194EE56A00276B14 /* TestTests.m */,
-				A49BC7F8194EE56A00276B14 /* Supporting Files */,
-			);
-			path = TestTests;
-			sourceTree = "<group>";
-		};
-		A49BC7F8194EE56A00276B14 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A49BC7F9194EE56A00276B14 /* TestTests-Info.plist */,
-				A49BC7FA194EE56A00276B14 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -352,14 +330,6 @@
 				A49BC7E5194EE56A00276B14 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A49BC7FA194EE56A00276B14 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A49BC7FB194EE56A00276B14 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
