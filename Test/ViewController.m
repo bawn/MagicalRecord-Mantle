@@ -34,6 +34,7 @@
                               };
         
         Member *member = [MTLJSONAdapter modelOfClass:[Member class] fromJSONDictionary:dic error:nil];
+        
         [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
             [MTLManagedObjectAdapter managedObjectFromModel:member insertingIntoContext:localContext error:nil];
         } completion:^(BOOL success, NSError *error) {

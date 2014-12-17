@@ -11,18 +11,16 @@
 		A40B8FB119930AE0007EAC19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D2194EE56A00276B14 /* Foundation.framework */; };
 		A40B8FB219930AE0007EAC19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D4194EE56A00276B14 /* CoreGraphics.framework */; };
 		A40B8FB319930AE0007EAC19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D6194EE56A00276B14 /* UIKit.framework */; };
-		A40B8FB919930AE0007EAC19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A40B8FB719930AE0007EAC19 /* InfoPlist.strings */; };
-		A40B8FBB19930AE0007EAC19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B8FBA19930AE0007EAC19 /* main.m */; };
-		A40B8FBF19930AE0007EAC19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B8FBE19930AE0007EAC19 /* AppDelegate.m */; };
-		A40B8FC219930AE0007EAC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40B8FC019930AE0007EAC19 /* Main.storyboard */; };
-		A40B8FC519930AE0007EAC19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B8FC419930AE0007EAC19 /* ViewController.m */; };
-		A40B8FC719930AE0007EAC19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40B8FC619930AE0007EAC19 /* Images.xcassets */; };
 		A40B8FCD19930AE0007EAC19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7F1194EE56A00276B14 /* XCTest.framework */; };
 		A40B8FCE19930AE0007EAC19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D2194EE56A00276B14 /* Foundation.framework */; };
 		A40B8FCF19930AE0007EAC19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D6194EE56A00276B14 /* UIKit.framework */; };
 		A40B8FD719930AE0007EAC19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A40B8FD519930AE0007EAC19 /* InfoPlist.strings */; };
 		A40B8FD919930AE0007EAC19 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B8FD819930AE0007EAC19 /* TestTests.m */; };
 		A431DF5A1A3EBBE600A82BAD /* MemberManaged.m in Sources */ = {isa = PBXBuildFile; fileRef = A431DF591A3EBBE600A82BAD /* MemberManaged.m */; };
+		A439DAE91A41218F00A0FC1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A49BC7DE194EE56A00276B14 /* main.m */; };
+		A439DAEA1A4121B500A0FC1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A49BC7E2194EE56A00276B14 /* AppDelegate.m */; };
+		A439DAEB1A4121BC00A0FC1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49BC7E8194EE56A00276B14 /* ViewController.m */; };
+		A439DAEC1A4121FC00A0FC1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49BC7E4194EE56A00276B14 /* Main.storyboard */; };
 		A467DD8A1A3A85F20068F90B /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = A467DD891A3A85F20068F90B /* Member.m */; };
 		A467DD8D1A3A950D0068F90B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A467DD8B1A3A950D0068F90B /* Model.xcdatamodeld */; };
 		A474CF371A3EC90F00EA493C /* UrlTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A474CF361A3EC90F00EA493C /* UrlTransformer.m */; };
@@ -42,16 +40,6 @@
 		73B6F5FEF10C6AD23E48535E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		93E3C60AA1AE48B5B86D7364 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40B8FB019930AE0007EAC19 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A40B8FB619930AE0007EAC19 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
-		A40B8FB819930AE0007EAC19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A40B8FBA19930AE0007EAC19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A40B8FBC19930AE0007EAC19 /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
-		A40B8FBD19930AE0007EAC19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A40B8FBE19930AE0007EAC19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A40B8FC119930AE0007EAC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A40B8FC319930AE0007EAC19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A40B8FC419930AE0007EAC19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A40B8FC619930AE0007EAC19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A40B8FCC19930AE0007EAC19 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40B8FD419930AE0007EAC19 /* TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTests-Info.plist"; sourceTree = "<group>"; };
 		A40B8FD619930AE0007EAC19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -117,31 +105,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A40B8FB419930AE0007EAC19 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				A40B8FBD19930AE0007EAC19 /* AppDelegate.h */,
-				A40B8FBE19930AE0007EAC19 /* AppDelegate.m */,
-				A40B8FC019930AE0007EAC19 /* Main.storyboard */,
-				A40B8FC319930AE0007EAC19 /* ViewController.h */,
-				A40B8FC419930AE0007EAC19 /* ViewController.m */,
-				A40B8FC619930AE0007EAC19 /* Images.xcassets */,
-				A40B8FB519930AE0007EAC19 /* Supporting Files */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		A40B8FB519930AE0007EAC19 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A40B8FB619930AE0007EAC19 /* Test-Info.plist */,
-				A40B8FB719930AE0007EAC19 /* InfoPlist.strings */,
-				A40B8FBA19930AE0007EAC19 /* main.m */,
-				A40B8FBC19930AE0007EAC19 /* Test-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		A40B8FD219930AE0007EAC19 /* TestTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +128,6 @@
 			children = (
 				A49BC7D8194EE56A00276B14 /* Test */,
 				A49BC7F7194EE56A00276B14 /* TestTests */,
-				A40B8FB419930AE0007EAC19 /* Test */,
 				A40B8FD219930AE0007EAC19 /* TestTests */,
 				A49BC7D1194EE56A00276B14 /* Frameworks */,
 				A49BC7D0194EE56A00276B14 /* Products */,
@@ -320,9 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40B8FC719930AE0007EAC19 /* Images.xcassets in Resources */,
-				A40B8FB919930AE0007EAC19 /* InfoPlist.strings in Resources */,
-				A40B8FC219930AE0007EAC19 /* Main.storyboard in Resources */,
+				A439DAEC1A4121FC00A0FC1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,12 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A439DAEB1A4121BC00A0FC1C /* ViewController.m in Sources */,
+				A439DAEA1A4121B500A0FC1C /* AppDelegate.m in Sources */,
+				A439DAE91A41218F00A0FC1C /* main.m in Sources */,
 				A474CF371A3EC90F00EA493C /* UrlTransformer.m in Sources */,
-				A40B8FC519930AE0007EAC19 /* ViewController.m in Sources */,
-				A40B8FBF19930AE0007EAC19 /* AppDelegate.m in Sources */,
 				A467DD8D1A3A950D0068F90B /* Model.xcdatamodeld in Sources */,
 				A431DF5A1A3EBBE600A82BAD /* MemberManaged.m in Sources */,
-				A40B8FBB19930AE0007EAC19 /* main.m in Sources */,
 				A467DD8A1A3A85F20068F90B /* Member.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,22 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A40B8FB719930AE0007EAC19 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A40B8FB819930AE0007EAC19 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A40B8FC019930AE0007EAC19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A40B8FC119930AE0007EAC19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A40B8FD519930AE0007EAC19 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
