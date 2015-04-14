@@ -1,4 +1,4 @@
-# Mantle
+# Mantle [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Mantle makes it easy to write a simple model layer for your Cocoa or Cocoa Touch
 application.
@@ -209,6 +209,8 @@ typedef enum : NSUInteger {
     return @{
         @"URL": @"url",
         @"HTMLURL": @"html_url",
+        @"number": @"number",
+        @"state": @"state",
         @"reporterLogin": @"user.login",
         @"assignee": @"assignee",
         @"updatedAt": @"updated_at"
@@ -298,8 +300,7 @@ NSDictionary *JSONDictionary = [MTLJSONAdapter JSONDictionaryFromModel:user];
 ### `+JSONKeyPathsByPropertyKey`
 
 The dictionary returned by this method specifies how your model object's
-properties map to the keys in the JSON representation. Properties that map to
-`NSNull` will not be present in the JSON representation, for example:
+properties map to the keys in the JSON representation, for example:
 
 ```objc
 
@@ -317,8 +318,8 @@ properties map to the keys in the JSON representation. Properties that map to
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-        @"createdAt": @"created_at",
-        @"meUser": NSNull.null
+        @"name": @"name",
+        @"createdAt": @"created_at"
     };
 }
 
@@ -337,14 +338,16 @@ properties map to the keys in the JSON representation. Properties that map to
 In this example, the `XYUser` class declares four properties that Mantle
 handles in different ways:
 
-- `name` is implicitly mapped to a key of the same name in the JSON
-  representation.
+- `name` is mapped to a key of the same name in the JSON representation.
 - `createdAt` is converted to its snake case equivalent.
 - `meUser` is not serialized into JSON.
 - `helper` is initialized exactly once after JSON deserialization.
 
 Use `-[NSDictionary mtl_dictionaryByAddingEntriesFromDictionary:]` if your
 model's superclass also implements `MTLJSONSerializing` to merge their mappings.
+
+If you'd like to map all properties of a Model class to themselves, you can use
+the `+[NSDictionary mtl_identityPropertyMapWithModel:]` helper method.
 
 When deserializing JSON using
 `+[MTLJSONAdapter modelOfClass:fromJSONDictionary:error:]`, JSON keys that don't
@@ -492,7 +495,7 @@ To add Mantle to your application:
     application.
 
 If you would prefer to use [CocoaPods](http://cocoapods.org), there are some
-[Mantle podspecs](https://github.com/CocoaPods/Specs/tree/master/Mantle) that
+[Mantle podspecs](https://github.com/CocoaPods/Specs/tree/master/Specs/Mantle) that
 have been generously contributed by third parties.
 
 If you’re instead developing Mantle on its own, use the `Mantle.xcworkspace` file.
@@ -505,7 +508,3 @@ Mantle is released under the MIT license. See
 ## More Info
 
 Have a question? Please [open an issue](https://github.com/Mantle/Mantle/issues/new)!
-
-Mantle also has a chat room on [Slack](https://slack.com/). If you'd like
-to join, just [provide your email address](https://github.com/Mantle/Mantle/pull/357)
-and we'll happily send you an invite!

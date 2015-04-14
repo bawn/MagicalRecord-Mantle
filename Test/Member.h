@@ -8,17 +8,17 @@
 
 #import "MTLModel.h"
 #import <Mantle.h>
+#import "MTLManagedObjectAdapter.h"
 
 @interface Member : MTLModel<MTLJSONSerializing, MTLManagedObjectSerializing>
 
-@property (nonatomic, retain) NSString * memberID;
-@property (nonatomic, retain) NSString * mobilePhone;
-@property (nonatomic, retain) NSDate * createDate;
-@property (nonatomic, retain) NSNumber *goldNumber;
-
+@property (nonatomic, retain) NSString   * memberID;
+@property (nonatomic, retain) NSString   * mobilePhone;
+@property (nonatomic, retain) NSDate     * createDate;
+@property (nonatomic, retain) NSNumber   *goldNumber;
 @property (nonatomic, assign) NSUInteger age;
-@property (nonatomic, assign) BOOL isVip;
-@property (nonatomic, retain) NSURL *url;
+@property (nonatomic, assign) BOOL       isVip;
+@property (nonatomic, retain) NSURL      *url;
 
 
 @end

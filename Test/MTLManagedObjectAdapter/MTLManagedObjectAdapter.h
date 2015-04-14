@@ -8,11 +8,17 @@
 
 #import <CoreData/CoreData.h>
 
-@class MTLModel;
+//! Project version number for MTLManagedObjectAdapter.
+FOUNDATION_EXPORT double MTLManagedObjectAdapterVersionNumber;
+
+//! Project version string for MTLManagedObjectAdapter.
+FOUNDATION_EXPORT const unsigned char MTLManagedObjectAdapterVersionString[];
+
+@protocol MTLModel;
 
 // A MTLModel object that supports being serialized to and from Core Data as an
 // NSManagedObject.
-@protocol MTLManagedObjectSerializing
+@protocol MTLManagedObjectSerializing <MTLModel>
 @required
 
 // The name of the Core Data entity that the receiver serializes to and
@@ -32,9 +38,7 @@
 // Subclasses overriding this method should combine their values with those of
 // `super`.
 //
-// Any property keys not present in the dictionary are assumed to match the
-// entity key that should be used. Any keys associated with NSNull will not
-// participate in managed object serialization.
+// Any keys omitted will not participate in managed object serialization.
 //
 // Returns a dictionary mapping property keys to entity keys (as strings) or
 // NSNull values.
@@ -73,9 +77,9 @@
 // of them will be set with our MTLModel's values.
 + (NSSet *)propertyKeysForManagedObjectUniquing;
 
-// Specifies how to convert the given property key to a managed object
-// attribute. If reversible, the transformer will also be used to convert the
-// managed object attribute back to the property.
+// Specifies how to convert a managed object attribute into the given property
+// key. If reversible, the transformer will also be used to convert the property
+// back into a managed object attribute.
 //
 // If the receiver implements a `+<key>EntityAttributeTransformer` method,
 // MTLManagedObjectAdapter will use the result of that method instead.
@@ -210,6 +214,45 @@ extern const NSInteger MTLManagedObjectAdapterErrorInvalidManagedObjectMapping;
 //           argument must not be nil.
 // error   - If not NULL, this may be set to an error that occurs during
 //           serialization or insertion.
-+ (id)managedObjectFromModel:(MTLModel<MTLManagedObjectSerializing> *)model insertingIntoContext:(NSManagedObjectContext *)context error:(NSError **)error;
++ (id)managedObjectFromModel:(id<MTLManagedObjectSerializing>)model insertingIntoContext:(NSManagedObjectContext *)context error:(NSError **)error;
+
+// An optional value transformer that should be used for properties of the given
+// class.
+//
+// A value transformer returned by the model's
+// +entityAttributeTransformerForKey: method is given precedence over the one
+// returned by this method.
+//
+// The default implementation invokes `+<class>EntityAttributeTransformer` on
+// the receiver if it's implemented. It supports NSURL conversion through
+// -NSURLEntityAttributeTransformer.
+//
+// class - The class of the property to serialize. This property must not be
+//         nil.
+//
+// Returns a value transformer or nil if no transformation should be used.
++ (NSValueTransformer *)transformerForModelPropertiesOfClass:(Class)class;
+
+// A value transformer that should be used for a properties of the given
+// primitive type.
+//
+// If `objCType` matches @encode(id), the value transformer returned by
+// +transformerForModelPropertiesOfClass: is used instead.
+//
+// The default implementation simply returns nil.
+//
+// objCType - The type encoding for the value of this property. This is the type
+//            as it would be returned by the @encode() directive.
+//
+// Returns a value transformer or nil if no transformation should be used.
++ (NSValueTransformer *)transformerForModelPropertiesOfObjCType:(const char *)objCType;
+
+@end
+
+@interface MTLManagedObjectAdapter (ValueTransformers)
+
+// This value transformer is used by MTLManagedObjectAdapter to automatically
+// convert NSURL properties to strings and vice versa.
++ (NSValueTransformer *)NSURLEntityAttributeTransformer;
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E69B425704746A78480BC78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3C60AA1AE48B5B86D7364 /* libPods.a */; };
+		7A8458701ADCAF5D00F14810 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A84586C1ADCAF5D00F14810 /* EXTRuntimeExtensions.m */; };
+		7A8458711ADCAF5D00F14810 /* MTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A84586F1ADCAF5D00F14810 /* MTLManagedObjectAdapter.m */; };
 		A40B8FB119930AE0007EAC19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D2194EE56A00276B14 /* Foundation.framework */; };
 		A40B8FB219930AE0007EAC19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D4194EE56A00276B14 /* CoreGraphics.framework */; };
 		A40B8FB319930AE0007EAC19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D6194EE56A00276B14 /* UIKit.framework */; };
@@ -23,7 +25,6 @@
 		A439DAEC1A4121FC00A0FC1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49BC7E4194EE56A00276B14 /* Main.storyboard */; };
 		A467DD8A1A3A85F20068F90B /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = A467DD891A3A85F20068F90B /* Member.m */; };
 		A467DD8D1A3A950D0068F90B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A467DD8B1A3A950D0068F90B /* Model.xcdatamodeld */; };
-		A474CF371A3EC90F00EA493C /* UrlTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A474CF361A3EC90F00EA493C /* UrlTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,12 @@
 
 /* Begin PBXFileReference section */
 		73B6F5FEF10C6AD23E48535E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7A84586A1ADCAF5D00F14810 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		7A84586B1ADCAF5D00F14810 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		7A84586C1ADCAF5D00F14810 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		7A84586D1ADCAF5D00F14810 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		7A84586E1ADCAF5D00F14810 /* MTLManagedObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLManagedObjectAdapter.h; sourceTree = "<group>"; };
+		7A84586F1ADCAF5D00F14810 /* MTLManagedObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLManagedObjectAdapter.m; sourceTree = "<group>"; };
 		93E3C60AA1AE48B5B86D7364 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40B8FB019930AE0007EAC19 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40B8FCC19930AE0007EAC19 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,8 +56,6 @@
 		A467DD881A3A85F20068F90B /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		A467DD891A3A85F20068F90B /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
 		A467DD8C1A3A950D0068F90B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		A474CF351A3EC90F00EA493C /* UrlTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlTransformer.h; sourceTree = "<group>"; };
-		A474CF361A3EC90F00EA493C /* UrlTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlTransformer.m; sourceTree = "<group>"; };
 		A49BC7D2194EE56A00276B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A49BC7D4194EE56A00276B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A49BC7D6194EE56A00276B14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -93,6 +98,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A8458681ADCAF5D00F14810 /* MTLManagedObjectAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				7A8458691ADCAF5D00F14810 /* extobjc */,
+				7A84586E1ADCAF5D00F14810 /* MTLManagedObjectAdapter.h */,
+				7A84586F1ADCAF5D00F14810 /* MTLManagedObjectAdapter.m */,
+			);
+			path = MTLManagedObjectAdapter;
+			sourceTree = "<group>";
+		};
+		7A8458691ADCAF5D00F14810 /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				7A84586A1ADCAF5D00F14810 /* EXTKeyPathCoding.h */,
+				7A84586B1ADCAF5D00F14810 /* EXTRuntimeExtensions.h */,
+				7A84586C1ADCAF5D00F14810 /* EXTRuntimeExtensions.m */,
+				7A84586D1ADCAF5D00F14810 /* metamacros.h */,
+			);
+			path = extobjc;
+			sourceTree = "<group>";
+		};
 		9E92F9F76159398DABE1F95C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +181,7 @@
 		A49BC7D8194EE56A00276B14 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				7A8458681ADCAF5D00F14810 /* MTLManagedObjectAdapter */,
 				A49BC7E1194EE56A00276B14 /* AppDelegate.h */,
 				A49BC7E2194EE56A00276B14 /* AppDelegate.m */,
 				A49BC7E4194EE56A00276B14 /* Main.storyboard */,
@@ -165,8 +192,6 @@
 				A467DD8B1A3A950D0068F90B /* Model.xcdatamodeld */,
 				A431DF581A3EBBE600A82BAD /* MemberManaged.h */,
 				A431DF591A3EBBE600A82BAD /* MemberManaged.m */,
-				A474CF351A3EC90F00EA493C /* UrlTransformer.h */,
-				A474CF361A3EC90F00EA493C /* UrlTransformer.m */,
 				A49BC7EA194EE56A00276B14 /* Images.xcassets */,
 				A49BC7D9194EE56A00276B14 /* Supporting Files */,
 			);
@@ -282,9 +307,10 @@
 				A439DAEB1A4121BC00A0FC1C /* ViewController.m in Sources */,
 				A439DAEA1A4121B500A0FC1C /* AppDelegate.m in Sources */,
 				A439DAE91A41218F00A0FC1C /* main.m in Sources */,
-				A474CF371A3EC90F00EA493C /* UrlTransformer.m in Sources */,
 				A467DD8D1A3A950D0068F90B /* Model.xcdatamodeld in Sources */,
 				A431DF5A1A3EBBE600A82BAD /* MemberManaged.m in Sources */,
+				7A8458701ADCAF5D00F14810 /* EXTRuntimeExtensions.m in Sources */,
+				7A8458711ADCAF5D00F14810 /* MTLManagedObjectAdapter.m in Sources */,
 				A467DD8A1A3A85F20068F90B /* Member.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

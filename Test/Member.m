@@ -12,9 +12,14 @@
 
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey{
-    return @{@"memberID" : @"id",
+    return @{
+             @"memberID" : @"id",
              @"mobilePhone" : @"phone",
-             @"createDate" : @"date"
+             @"createDate" : @"date",
+             @"goldNumber" : @"goldNumber",
+             @"age" : @"age",
+             @"isVip" : @"isVip",
+             @"url" : @"url"
              };
 }
 
@@ -26,9 +31,9 @@
 
 + (NSValueTransformer *)JSONTransformerForKey:(NSString *)key{
     if ([key isEqualToString:@"createDate"]) {
-        return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *string) {
+        return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *string, BOOL *success, NSError *__autoreleasing *error) {
             return [self.dateFormatter dateFromString:string];
-        } reverseBlock:^id(NSDate *date) {
+        } reverseBlock:^id(NSDate *date, BOOL *success, NSError *__autoreleasing *error) {
              return [self.dateFormatter stringFromDate:date];
         }];
     }
@@ -38,9 +43,9 @@
 }
 
 + (NSValueTransformer *)ageJSONTransformer{
-    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *string) {
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *string, BOOL *success, NSError *__autoreleasing *error) {
         return @([string integerValue]);
-    } reverseBlock:^id(NSNumber *number) {
+    } reverseBlock:^id(NSNumber *number, BOOL *success, NSError *__autoreleasing *error) {
         return [number stringValue];
     }];
 }
@@ -70,7 +75,15 @@
 }
 
 + (NSDictionary *)managedObjectKeysByPropertyKey{
-    return nil;
+    return @{
+             @"memberID" : @"memberID",
+             @"mobilePhone" : @"mobilePhone",
+             @"createDate" : @"createDate",
+             @"goldNumber" : @"goldNumber",
+             @"age" : @"age",
+             @"isVip" : @"isVip",
+             @"url" : @"url"
+             };
 }
 
 
@@ -79,19 +92,19 @@
 }
 
 
-+ (NSValueTransformer *)entityAttributeTransformerForKey:(NSString *)key{
-    if ([key isEqualToString:@"url"]) {
-        return [MTLValueTransformer reversibleTransformerWithBlock:^id(NSURL *url) {
-            return url.absoluteString;
-        }];
-    }
-    else{
-        return nil;
-    }
-}
+//+ (NSValueTransformer *)entityAttributeTransformerForKey:(NSString *)key{
+//    if ([key isEqualToString:@"url"]) {
+//        return [MTLValueTransformer transformerUsingForwardBlock:^id(NSURL *url, BOOL *success, NSError *__autoreleasing *error) {
+//            return url.absoluteString;
+//        }];
+//    }
+//    else{
+//        return nil;
+//    }
+//}
 
 //+ (NSValueTransformer *)urlEntityAttributeTransformer{
-//    return [MTLValueTransformer reversibleTransformerWithBlock:^id(NSURL *url) {
+//    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSURL *url, BOOL *success, NSError *__autoreleasing *error) {
 //        return url.absoluteString;
 //    }];
 //}

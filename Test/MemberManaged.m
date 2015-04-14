@@ -7,7 +7,6 @@
 //
 
 #import "MemberManaged.h"
-#import "UrlTransformer.h"
 
 @implementation MemberManaged
 
