@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CoreData+MagicalRecord.h"
+#import "MagicalRecord.h"
 
 @implementation AppDelegate
 

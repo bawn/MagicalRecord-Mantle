@@ -3,3 +3,4 @@ inhibit_all_warnings!
 
 pod 'Mantle'
 pod 'MagicalRecord'
+pod 'libextobjc'

@@ -10,7 +10,7 @@
 #import <Mantle.h>
 #import "Member.h"
 #import "MemberManaged.h"
-#import "CoreData+MagicalRecord.h"
+#import "MagicalRecord.h"
 
 @interface ViewController ()
 

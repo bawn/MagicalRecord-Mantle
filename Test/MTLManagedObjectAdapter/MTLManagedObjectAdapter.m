@@ -7,12 +7,9 @@
 //
 
 #import <objc/runtime.h>
-
 #import <Mantle/Mantle.h>
-
-#import <Mantle/EXTScope.h>
+#import <EXTScope.h>
 #import "EXTRuntimeExtensions.h"
-
 #import "MTLManagedObjectAdapter.h"
 
 NSString * const MTLManagedObjectAdapterErrorDomain = @"MTLManagedObjectAdapterErrorDomain";
