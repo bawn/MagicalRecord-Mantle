@@ -19,5 +19,6 @@
 @property (nonatomic, retain) NSNumber * age;
 @property (nonatomic, retain) NSNumber * isVip;
 @property (nonatomic, retain) NSString * url;
+@property (nonatomic, retain) NSValue  * rang;
 
 @end

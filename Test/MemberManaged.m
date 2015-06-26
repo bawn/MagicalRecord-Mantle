@@ -17,5 +17,6 @@
 @dynamic age;
 @dynamic isVip;
 @dynamic url;
+@dynamic rang;
 
 @end

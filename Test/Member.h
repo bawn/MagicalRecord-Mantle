@@ -19,6 +19,6 @@
 @property (nonatomic, assign) NSUInteger age;
 @property (nonatomic, assign) BOOL       isVip;
 @property (nonatomic, retain) NSURL      *url;
-
+@property (nonatomic, assign) NSRange    rang;
 
 @end

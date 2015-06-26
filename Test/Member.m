@@ -19,7 +19,8 @@
              @"goldNumber" : @"goldNumber",
              @"age" : @"age",
              @"isVip" : @"isVip",
-             @"url" : @"url"
+             @"url" : @"url",
+             @"rang" : @"rang"
              };
 }
 
@@ -50,6 +51,15 @@
     }];
 }
 
++ (NSValueTransformer *)rangJSONTransformer{
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *string, BOOL *success, NSError *__autoreleasing *error) {
+        // string -> nsrang
+        NSArray *arry = [string componentsSeparatedByString:@","];
+        NSRange rang = NSMakeRange([arry.firstObject integerValue], [arry[1] integerValue]);
+        return [NSValue valueWithRange:rang];
+    }];
+}
+
 
 + (NSValueTransformer *)urlJSONTransformer{
     return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
@@ -68,6 +78,8 @@
     }
 }
 
+
+
 #pragma mark - MTLManagedObjectSerializing
 
 + (NSString *)managedObjectEntityName{
@@ -82,7 +94,8 @@
              @"goldNumber" : @"goldNumber",
              @"age" : @"age",
              @"isVip" : @"isVip",
-             @"url" : @"url"
+             @"url" : @"url",
+             @"rang" : @"rang"
              };
 }
 
@@ -90,6 +103,8 @@
 + (NSSet *)propertyKeysForManagedObjectUniquing{
     return [NSSet setWithObject:@"memberID"];
 }
+
+
 
 
 //+ (NSValueTransformer *)entityAttributeTransformerForKey:(NSString *)key{

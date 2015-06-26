@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E69B425704746A78480BC78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3C60AA1AE48B5B86D7364 /* libPods.a */; };
+		7A80C2681B3CEE4F00D53F00 /* RangValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A80C2671B3CEE4F00D53F00 /* RangValueTransformer.m */; };
 		7A8458701ADCAF5D00F14810 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A84586C1ADCAF5D00F14810 /* EXTRuntimeExtensions.m */; };
 		7A8458711ADCAF5D00F14810 /* MTLManagedObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A84586F1ADCAF5D00F14810 /* MTLManagedObjectAdapter.m */; };
 		A40B8FB119930AE0007EAC19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49BC7D2194EE56A00276B14 /* Foundation.framework */; };
@@ -39,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		73B6F5FEF10C6AD23E48535E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7A80C2661B3CEE4F00D53F00 /* RangValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangValueTransformer.h; sourceTree = "<group>"; };
+		7A80C2671B3CEE4F00D53F00 /* RangValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangValueTransformer.m; sourceTree = "<group>"; };
 		7A84586A1ADCAF5D00F14810 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		7A84586B1ADCAF5D00F14810 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		7A84586C1ADCAF5D00F14810 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				A467DD8B1A3A950D0068F90B /* Model.xcdatamodeld */,
 				A431DF581A3EBBE600A82BAD /* MemberManaged.h */,
 				A431DF591A3EBBE600A82BAD /* MemberManaged.m */,
+				7A80C2661B3CEE4F00D53F00 /* RangValueTransformer.h */,
+				7A80C2671B3CEE4F00D53F00 /* RangValueTransformer.m */,
 				A49BC7EA194EE56A00276B14 /* Images.xcassets */,
 				A49BC7D9194EE56A00276B14 /* Supporting Files */,
 			);
@@ -310,6 +315,7 @@
 				A467DD8D1A3A950D0068F90B /* Model.xcdatamodeld in Sources */,
 				A431DF5A1A3EBBE600A82BAD /* MemberManaged.m in Sources */,
 				7A8458701ADCAF5D00F14810 /* EXTRuntimeExtensions.m in Sources */,
+				7A80C2681B3CEE4F00D53F00 /* RangValueTransformer.m in Sources */,
 				7A8458711ADCAF5D00F14810 /* MTLManagedObjectAdapter.m in Sources */,
 				A467DD8A1A3A85F20068F90B /* Member.m in Sources */,
 			);

@@ -31,20 +31,20 @@
                           @"goldNumber" : @2,
                           @"age" : @"18",
                           @"url" : @"http://bawn.github.io/",
-                          @"isVip" : NSNull.null
+                          @"isVip" : NSNull.null,
+                          @"rang" : @"2,3"
                           };
     
     Member *member = [MTLJSONAdapter modelOfClass:[Member class] fromJSONDictionary:dic error:nil];
+    NSLog(@"%lu", (unsigned long)member.rang.location);
+    
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
         [MTLManagedObjectAdapter managedObjectFromModel:member insertingIntoContext:localContext error:nil];
     } completion:^(BOOL success, NSError *error) {
         NSLog(@"%lu", (unsigned long)[MemberManaged MR_findAll].count);
+        NSLog(@"%lu", [[[MemberManaged MR_findFirst] rang] rangeValue].location);
     }];
 
-    
-    
-    
-    
 }
 
 - (IBAction)updateData:(id)sender{
@@ -55,7 +55,8 @@
                           @"goldNumber" : @2,
                           @"age" : @"19",
                           @"url" : @"http://bawn.github.io/",
-                          @"isVip" : NSNull.null
+                          @"isVip" : NSNull.null,
+                          @"rang" : @"2,3"
                           };
     Member *member = [MTLJSONAdapter modelOfClass:[Member class] fromJSONDictionary:dic error:nil];
     
